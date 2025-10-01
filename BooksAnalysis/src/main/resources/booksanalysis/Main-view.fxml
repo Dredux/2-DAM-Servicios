@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.TextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -8,6 +7,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
@@ -16,14 +16,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" prefHeight="500.0" prefWidth="800.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="booksanalysis.MainController">
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="booksanalysis.MainController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <children>
       <Label text="Library Analysis" textFill="RED">
          <font>
-            <Font size="24.0" />
+            <Font size="36.0" />
          </font>
       </Label>
       <GridPane>
@@ -34,8 +34,15 @@
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
@@ -61,19 +68,9 @@
                   <Insets left="50.0" />
                </GridPane.margin>
             </TextField>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Author" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Author" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <GridPane.margin>
-                  <Insets left="9.0" />
-               </GridPane.margin>
-            </Text>
-            <TextField prefHeight="30.0" prefWidth="213.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-               <GridPane.margin>
-                  <Insets left="50.0" />
-               </GridPane.margin>
-            </TextField>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Year" GridPane.columnIndex="2" GridPane.rowIndex="3">
-               <GridPane.margin>
-                  <Insets left="10.0" />
+                  <Insets left="7.0" />
                </GridPane.margin>
             </Text>
             <TextField prefHeight="30.0" prefWidth="213.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
@@ -81,37 +78,56 @@
                   <Insets left="50.0" />
                </GridPane.margin>
             </TextField>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Genre" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Year" GridPane.columnIndex="2" GridPane.rowIndex="6">
                <GridPane.margin>
-                  <Insets left="9.0" />
+                  <Insets left="10.0" />
                </GridPane.margin>
             </Text>
-            <TextField prefHeight="30.0" prefWidth="213.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <TextField prefHeight="30.0" prefWidth="213.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets left="50.0" />
                </GridPane.margin>
             </TextField>
-            <HBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Genre" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="9.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField prefHeight="30.0" prefWidth="213.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </TextField>
+            <HBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="8">
                <children>
-                  <Button mnemonicParsing="false" text="Button">
+                  <Button mnemonicParsing="false" text="Add">
                      <HBox.margin>
                         <Insets right="20.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" text="Button">
+                  <Button mnemonicParsing="false" text="Update">
                      <HBox.margin>
                         <Insets right="20.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" text="Button" />
+                  <Button mnemonicParsing="false" text="Delete" />
                </children>
             </HBox>
+            <TextField prefHeight="30.0" prefWidth="143.0" GridPane.columnIndex="2" GridPane.rowIndex="11">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search:" GridPane.columnIndex="2" GridPane.rowIndex="10" />
          </children>
       </GridPane>
-      <MenuButton mnemonicParsing="false" text="MenuButton">
+      <MenuButton mnemonicParsing="false" text="Select option">
         <items>
-          <MenuItem mnemonicParsing="false" text="Action 1" />
-          <MenuItem mnemonicParsing="false" text="Action 2" />
+            <MenuItem mnemonicParsing="false" text="Without filter" />
+            <MenuItem mnemonicParsing="false" text="Total number of books" />
+            <MenuItem mnemonicParsing="false" text="The same genre than..." />
+            <MenuItem mnemonicParsing="false" text="Authors sorted alphabetically" />
+            <MenuItem mnemonicParsing="false" text="Average publication year" />
         </items>
          <VBox.margin>
             <Insets />

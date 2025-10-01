@@ -1,5 +1,6 @@
 package booksanalysis.model;
-
+import lombok.Getter;
+@Getter
 public class Book {
     private String title;
     private String author;

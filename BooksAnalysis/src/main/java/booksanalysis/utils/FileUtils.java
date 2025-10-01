@@ -4,5 +4,7 @@ import javafx.collections.ObservableList;
 import java.util.List;
 public class FileUtils {
     public static void saveToFile(ObservableList<Book> books){}
-    // public static List<Book> loadFromFile(){}
+//    public static List<Book> loadFromFile(){
+//        return List.of();
+//    }
 }
